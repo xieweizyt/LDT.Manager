@@ -1,0 +1,10 @@
+.git
+.tools
+**/bin
+**/obj
+**/App_Data
+**/Logs
+*.log
+AuthServer
+Gateways
+MicroServices

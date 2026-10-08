@@ -1,0 +1,15 @@
+.ldt-page { display: flex; flex-direction: column; gap: 18px; }
+.ldt-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.ldt-heading h2 { margin: 0; font-size: 22px; font-weight: 650; color: var(--art-gray-900); }
+.ldt-heading p { margin-top: 6px; color: var(--art-gray-500); font-size: 14px; }
+.ldt-card { border-radius: 16px; }
+.ldt-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 20px; }
+.ldt-search { display: flex; gap: 10px; flex-wrap: wrap; }
+.ldt-search .el-input { width: 280px; max-width: 100%; }
+.ldt-pagination { display: flex; justify-content: flex-end; margin-top: 22px; overflow-x: auto; }
+.ldt-person { display: flex; align-items: center; gap: 12px; }
+.ldt-person .el-avatar { color: var(--main-color); background: color-mix(in srgb, var(--main-color) 12%, transparent); font-weight: 650; flex-shrink: 0; }
+.ldt-muted { color: var(--art-gray-500); font-size: 12px; }
+.ldt-selector { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.ldt-selector .el-select { width: 360px; max-width: 100%; }
+@media (max-width: 600px) { .ldt-toolbar, .ldt-search { width: 100%; } .ldt-search .el-input { width: 100%; } .ldt-heading h2 { font-size: 20px; } }

@@ -1,0 +1,167 @@
+{
+  "VerifiedAt": "2026-10-06T22:56:14.4199626+08:00",
+  "Environment": "Development",
+  "Passed": true,
+  "Checks": [
+    {
+      "Name": "Development service is running",
+      "Passed": true
+    },
+    {
+      "Name": "Anonymous user list is rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Unrelated upstream APIs are not exposed",
+      "Passed": true
+    },
+    {
+      "Name": "OAuth access and refresh tokens are issued",
+      "Passed": true
+    },
+    {
+      "Name": "Administrator can read users and roles",
+      "Passed": true
+    },
+    {
+      "Name": "Role creation succeeds",
+      "Passed": true
+    },
+    {
+      "Name": "Role editing is persisted",
+      "Passed": true
+    },
+    {
+      "Name": "User creation succeeds",
+      "Passed": true
+    },
+    {
+      "Name": "User without grants receives 403",
+      "Passed": true
+    },
+    {
+      "Name": "User cannot grant themselves permissions",
+      "Passed": true
+    },
+    {
+      "Name": "User cannot read inherited permission details without authorization",
+      "Passed": true
+    },
+    {
+      "Name": "Direct user permission can be saved",
+      "Passed": true
+    },
+    {
+      "Name": "Direct user permission is persisted",
+      "Passed": true
+    },
+    {
+      "Name": "Direct grant takes effect with the existing token",
+      "Passed": true
+    },
+    {
+      "Name": "Read permission cannot create a user",
+      "Passed": true
+    },
+    {
+      "Name": "Direct user grant can be revoked",
+      "Passed": true
+    },
+    {
+      "Name": "Revocation takes effect with the existing token",
+      "Passed": true
+    },
+    {
+      "Name": "Role permissions can be saved",
+      "Passed": true
+    },
+    {
+      "Name": "User role assignment can be saved",
+      "Passed": true
+    },
+    {
+      "Name": "Role membership is persisted",
+      "Passed": true
+    },
+    {
+      "Name": "Inherited permissions identify their granting role",
+      "Passed": true
+    },
+    {
+      "Name": "New role membership takes effect with the existing token",
+      "Passed": true
+    },
+    {
+      "Name": "Role grants can be revoked",
+      "Passed": true
+    },
+    {
+      "Name": "Role revocation takes effect with the existing token",
+      "Passed": true
+    },
+    {
+      "Name": "Inherited permission details update after revocation",
+      "Passed": true
+    },
+    {
+      "Name": "User-edit permission can be delegated",
+      "Passed": true
+    },
+    {
+      "Name": "Editing users does not grant role assignment access",
+      "Passed": true
+    },
+    {
+      "Name": "Legacy role assignment bypass is unavailable",
+      "Passed": true
+    },
+    {
+      "Name": "Role assignment permission can be delegated separately",
+      "Passed": true
+    },
+    {
+      "Name": "Role assignment works without user-edit permission",
+      "Passed": true
+    },
+    {
+      "Name": "Delegated role administrator can access the authorization page",
+      "Passed": true
+    },
+    {
+      "Name": "Role assignment does not grant permission-editor access",
+      "Passed": true
+    },
+    {
+      "Name": "User editing succeeds",
+      "Passed": true
+    },
+    {
+      "Name": "Account can be disabled",
+      "Passed": true
+    },
+    {
+      "Name": "Disabling an account rejects its existing token",
+      "Passed": true
+    },
+    {
+      "Name": "Refresh rotates the token",
+      "Passed": true
+    },
+    {
+      "Name": "Logout revocation succeeds",
+      "Passed": true
+    },
+    {
+      "Name": "Revoked refresh token cannot issue another token",
+      "Passed": true
+    },
+    {
+      "Name": "Temporary user is removed",
+      "Passed": true
+    },
+    {
+      "Name": "Temporary role is removed",
+      "Passed": true
+    }
+  ]
+}

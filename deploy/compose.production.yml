@@ -1,0 +1,34 @@
+name: ldt
+services:
+  backend:
+    build:
+      context: ../backend
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ConnectionStrings__Default: ${ConnectionStrings__Default:?Set the production SQL Server connection string}
+      App__CorsOrigins: ${App__CorsOrigins:?Set the frontend HTTPS origin}
+      App__FrontendUrl: ${App__FrontendUrl:?Set the frontend URL}
+      AuthServer__Authority: ${AuthServer__Authority:?Set the public API HTTPS origin}
+      AuthServer__ClientId: ldt-spa
+      AuthServer__SigningCertificatePath: /certificates/identity-signing.pfx
+      AuthServer__SigningCertificatePassword: ${AuthServer__SigningCertificatePassword:?Set the certificate password}
+      Seed__AdminEmail: ${Seed__AdminEmail:?Set the admin email}
+      Seed__AdminPassword: ${Seed__AdminPassword:?Set the first initialization password}
+      ReverseProxy__KnownProxies__0: ${ReverseProxy__KnownProxies__0:?Set the trusted reverse proxy address}
+      Database__AutoMigrate: "false"
+    ports:
+      - "127.0.0.1:5000:5000"
+    volumes:
+      - ./certificates:/certificates:ro
+      - ldt_keys:/app/App_Data
+    restart: unless-stopped
+  frontend:
+    build:
+      context: ../frontend
+      args:
+        VITE_API_URL: ${VITE_API_URL:?Set the public API HTTPS origin}
+    ports:
+      - "127.0.0.1:8080:8080"
+    restart: unless-stopped
+volumes:
+  ldt_keys:

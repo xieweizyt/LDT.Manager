@@ -1,0 +1,13 @@
+{
+  "frontend": {
+    "repository": "https://github.com/Daymychen/art-design-pro",
+    "branch": "main",
+    "commit": "f3aaf58eec1a0e988f162352c33862327a484f95"
+  },
+  "backend": {
+    "repository": "https://github.com/WilliamXu96/ABP-MicroService",
+    "branch": "master",
+    "commit": "2b261c9185ddb4536ee406d5b43ada4f3774c71b",
+    "excludedFrontend": "WebApp"
+  }
+}
